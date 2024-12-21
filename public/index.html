@@ -1,37 +1,39 @@
-<!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>AI Text Summarizer App</title>
-    <link rel="stylesheet" href="stylesheet.css">   
-  </head>
-  <body>
-    <h1>AI Text Summarizer App</h1>
-    <p> Welcome to the AI Text Summarizer App! This app leverages the power of Artificial Intelligence APIs to provide concise summaries of long texts. Whether you have a lengthy article, research paper, or any other text document that you want to summarize quickly, our app can assist you. </p>
-    <p> Simply paste your text into the text area below and click the "Submit" button. </p>
-    <div class="container">
-      <div class="text-box">
-        <textarea id="text_to_summarize" name="text_to_summarize" placeholder="Paste in some text to summarize. (Min length is 200 chars. Max length is 100,000 chars.)" maxlength="100000"></textarea>
-        <button id="submit-button" class="submit-button" >
-          <span class="submit-button-text">Summarize</span>
-        </button>
-      </div>
-      <div class="text-box"> 
-      <textarea id="summary" name="summarized_text" placeholder="Summarized text will appear here"> </textarea>
-      </div>
-    </div>
-    <section class="cta-section">
-      <div class="cta-content">
-        <div class="cta-text">
-        <h2>Curious how to build this app?</h2>
-        <p>Join Postman's Student Program and elevate your software development and API knowledge to help you in your career.</p>
-          <a href="https://www.postman.com/student-program/student-expert/?utm_campaign=CGC&utm_medium=referral&utm_source=internal&utm_term=pbl-skilljar&utm_content=pbl_summariser_app" class="cta-button" target="_blank" rel="noopener nofollow">Register as student</a>
-        </div>
-        <img src="images/learning.png"></img>
-      </div>
+    <title>AI Text Terse</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body class="p-0 m-0 bg-customGray-dark h-screen flex items-center justify-center">
+    <section class="w-11/12 max-w-4xl text-center">
+        <header class="w-full h-fit pt-10 flex flex-col items-center gap-y-10">
+            <span class="flex justify-between w-full items-center">
+                <img src="./images/logo.png" alt="Text_Terse Logo" class="w-8 h-8">
+                <a href="./summary.html" class="bg-orange-400 px-5 py-3 font-semibold rounded">Get Started</a>
+            </span>
+
+            <section class="w-full h-fit flex flex-col items-center gap-y-6">
+                <p class="text-gray-100 italic text-sm">Effortless Summarization with AI</p>
+                <h1 class="text-orange-400 text-4xl">Transform lengthy texts into concise summaries in seconds.</h1>
+                <p class="text-base text-slate-300">Whether you're a student, researcher, or professional, SummarizePro
+                    is here to enhance your productivity and streamline
+                    your reading process.</p>
+                <img src="./images/summaryImg.png" alt="Text_Header" class="max-w-full h-auto">
+            </section>
+        </header>
+        <footer class="bg-slate-100 text-base-300 p-4 mt-10 text-center">
+            <aside class="flex flex-col items-center gap-y-4">
+                <img src='/images/favicon.png' class="w-10 border border-white rounded-full p-1 bg-white" />
+                <p class="font-semibold">
+                    Copyright © 2024 - All right reserved by Text_Terse Summarizer
+                </p>
+            </aside>
+        </footer>
     </section>
-    <script src="script.js"></script>
-  </body>
+</body>
+
 </html>

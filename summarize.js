@@ -1,5 +1,6 @@
 // Returns the summarized text as a string.
 const axios = require('axios');
+require("dotenv").config();
 
 async function summarizeText(text) {
   let data = JSON.stringify({
@@ -22,12 +23,15 @@ async function summarizeText(text) {
   };
 
   try {
-    const response = await axios.request(config);
-    return response.data[0].summary_text;
+		const response = await axios.request(config);
+
+		return response.data[0].summary_text;
+  } catch (error) {
+    console.log(process.env.ACCESS_TOKEN);
+		console.log("Error during summarization:", error);
+		return "An error occurred during summarization.";
   }
-  catch (error) {
-    console.log(error);
-  }
+
 
 
 }

@@ -2,7 +2,7 @@ const express = require('express');
 
 const app = express();
 
-const port = process.env.PORT;
+const port = process.env.PORT || 4300;
 
 const summarizeText = require('./summarize.js');
 
