@@ -1,4 +1,4 @@
-// Returns the summarized text as a string.
+
 const axios = require('axios');
 require("dotenv").config();
 
